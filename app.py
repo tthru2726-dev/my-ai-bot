@@ -7,7 +7,8 @@ st.set_page_config(page_title="Master AI Trading Dashboard", layout="centered", 
 st.title("🎯 Master AI Trading Dashboard")
 st.caption("Elliott Wave + Multi-Timeframe + Risk Management Engine")
 
-symbol = st.selectbox("Asset Select කරන්න:", ['BTC-USD', 'GC=F', 'ETH-USD'], index=0)
+symbol = st.selectbox("Asset Select කරන්න:", ['BTC-USD', 'GLD', 'GC=F', 'ETH-USD'], index=0)
+
 entry_tf = st.select_slider("Entry Timeframe:", options=['15m', '1h', '4h', '1d'], value='4h')
 
 col1, col2 = st.columns(2)
